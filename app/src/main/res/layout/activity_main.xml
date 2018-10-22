@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <com.ispeak.handgesture.MyCameraView
+        android:id="@+id/HandGestureApp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/AddBtn"
+        opencv:camera_id="front" />
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:background="#fff"
+        android:onClick="addNewGesture"
+        android:padding="4dp"
+        android:text="@string/AddGesture"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/TrainBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AddBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:background="#fff"
+        android:onClick="train"
+        android:padding="8dp"
+        android:text="@string/train"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/TestBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/TrainBtn"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="4dp"
+        android:background="#fff"
+        android:onClick="test"
+        android:padding="8dp"
+        android:text="@string/test"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+</RelativeLayout>

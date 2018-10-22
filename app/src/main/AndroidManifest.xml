@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ispeak.handgesture"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-feature android:name="android.hardware.camera.front"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:extractNativeLibs="false"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme">
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ispeak.handgesture.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.ipaulpro.afilechooser.FileChooserActivity"
+            android:exported="true"
+            android:icon="@drawable/ic_chooser"
+            android:label="@string/choose_file">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ispeak.handgesture.DisplayAppList"
+            android:label="@string/title_activity_display_app_list">
+        </activity>
+        <activity
+            android:name=".StarterActivity"
+            android:label="@string/app_name"/>
+        <activity
+            android:name=".GestureSearch"
+            android:label="Search Gestures"
+            android:parentActivityName=".StarterActivity"/>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName=".StarterActivity"/>
+        <activity
+            android:name=".FilesActivity"
+            android:label="Gestures Directory"
+            android:parentActivityName=".GestureSearch"/>
+        <activity
+            android:name=".ItemsActivity"
+            android:label="Items"
+            android:parentActivityName=".FilesActivity"/>
+        <activity
+            android:name=".DisplayActivity"
+            android:label="Gesture"
+            android:parentActivityName=".ItemsActivity"/>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+</manifest>

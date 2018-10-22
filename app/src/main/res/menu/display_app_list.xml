@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_pan_tool_white_48dp"
+        android:title="@string/action_settings"/>
+
+</menu>

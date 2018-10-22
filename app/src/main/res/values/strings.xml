@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iSpeak</string>
+    <string name="action_save">Save Picture</string>
+    <string name="data_collection">Data Collection</string>
+    <string name="train">Train</string>
+    <string name="test">Test</string>
+    <string name="AddGesture">Add\n Gesture</string>
+    <string name="chooser_title">Select a gesture</string>
+    <string name="map_apps">Map Apps</string>
+    <string name="title_activity_display_app_list">Display App List</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_test">App Test</string>
+    <string name="applabel">App Label: </string>
+    <string name="label">Label</string>
+    <string name="app">Package: </string>
+    <string name="about">About</string>
+    <string name="gestures">Gestures</string>
+    <string name="normal_gestures">Normal Gestures</string>
+    <string name="emergency_gestures">Emergency Gestures</string>
+    <string name="search_gesture">Search gesture</string>
+    <string name="knowmore">Sign Dictionary! Select one of these.</string>
+    <string name="Alphabets">Alphabets</string>
+    <string name="Numbers">Numbers</string>
+    <string name="fuw">Frequently used</string>
+    <string name="exit_application">Exit Application?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="speak">Speak..</string>
+    <string name="message_processing">Processing text...please wait</string>
+    <string name="message_empty">Enter some text in the search box!!</string>
+</resources>
